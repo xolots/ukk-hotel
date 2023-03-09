@@ -116,7 +116,7 @@
                       <input type="hidden" name="date2" value="<%=data[i].checkout%>">
                       <input type="hidden" name="nomor_kamar" value="<%=data[i].nomor_kamar%>">
 
-                      <% if (data[0].status == 1) {%>
+                      <% if (data[i].status === 1) {%>
                         <input type="submit" class="btn btn-success btn-ml" name="click" value="Disetujui" disabled>
                     <% }else { %>
                     <input type="submit" class="btn btn-success btn-ml" name="click" value="Setuju">
